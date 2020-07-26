@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
         <div class="container">
-            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto" href="#">
@@ -22,13 +22,16 @@
             </a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg">Home</i></a></li>
-                    <li class="nav-item "><a class="nav-link" href="./aboutus.html"><i class="fa fa-info fa-lg">About</i></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg">Home</i></a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link" href="./aboutus.html"><i
+                                class="fa fa-info fa-lg">About</i></a></li>
                     <li class="nav-item "><a class="nav-link" href="#"><i class="fa fa-list fa-lg">Menu</i></a></li>
-                    <li class="nav-item "><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg">Contact</i></a></li>
-                 </ul>
+                    <li class="nav-item "><a class="nav-link" href="#"><i
+                                class="fa fa-address-card fa-lg">Contact</i></a></li>
+                </ul>
             </div>
-            
+
         </div>
     </nav>
 
@@ -40,12 +43,17 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                
+
                 <div class="col-12 col-sm align-self-center">
                     <img src="./img/logo.png" class="img-fluid">
+
                 </div>
+                <div class="col-12 col-sm align-self-center">
+                    <button type="button" class="btn btn-warning text-black">
+                        <strong><a href="#bottom" class="decorate">Reserve Table</a></strong>
+                    </button>
                 </div>
-                </div>
+            </div>
     </header>
 
     <div class="container">
@@ -55,8 +63,7 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/uthappizza.png" alt="Uthappizza">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza
                             <span class="badge badge-danger">HOT</span>
@@ -74,15 +81,24 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
+            <div class="col-12 col-sm-2">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthw atering combinations with a choice of five different salads, six enticing appetizers,
-                    six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
-                    $19.99 per person </p>
+                <div class="media">
+
+                    <div class="media-body col-md-9">
+                        <h2>Weekend Grand Buffet&nbsp;&nbsp;<span class="badge badge-danger"> NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthw atering combinations with a choice of five different salads, six enticing
+                            appetizers,
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            just
+                            $19.99 per person </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Alberto Somayya">
+                </div>
             </div>
+
         </div>
 
         <div class="row row-content align-items-center">
@@ -91,8 +107,8 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/alberto.png" alt="Alberto Somayya">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png"
+                        alt="Alberto Somayya">
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
@@ -100,10 +116,83 @@
                             International experience having worked closely with
                             whos-who in the culinary world, he specializes in
                             creating mouthwatering Indo-Italian fusion experiences.
-                            </p>
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row row-content col-12 col-sm-8 ">
+            <div class="card ">
+                <h3 class="card-header bg-warning text-white col-sm-12">
+                    Reserve a Table
+                </h3>
+                <p id="bottom"></p>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-md-2">
+                                <label for="numberOfGuest" class="col-form-label ">Number of Guest</label>
+                            </div>
+                            <div class="col-md-1 align-self-center">
+                                <input type="radio" name="numberOfGuest" id="1" class="form-control" value="1">
+                            </div>
+
+                            <label for="1" class="col-form-label align-self-center">1</label>
+
+                            <div class="col-md-1 align-self-center">
+                                <input type="radio" name="numberOfGuest" id="2" class="form-control" value="2">
+                            </div>
+
+                            <label for="3" class="col-form-label align-self-center">2</label>
+
+                            <div class="col-md-1 align-self-center">
+                                <input type="radio" name="numberOfGuest" id="3" class="form-control" value="3">
+                            </div>
+
+                            <label for="3" class="col-form-label align-self-center">3</label>
+
+                            <div class="col-md-1 align-self-center">
+                                <input type="radio" name="numberOfGuest" id="4" class="form-control" value="4">
+                            </div>
+
+                            <label for="4" class="col-form-label align-self-center">4</label>
+
+                            <div class="col-md-1 align-self-center">
+                                <input type="radio" name="numberOfGuest" id="5" class="form-control" value="5">
+                            </div>
+
+                            <label for="5" class="col-form-label align-self-center">5</label>
+
+                            <div class="col-md-1 align-self-center">
+                                <input type="radio" name="numberOfGuest" id="6" class="form-control" value="6">
+                            </div>
+
+                            <label for="6" class="col-form-label align-self-center">6</label>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-2">
+                                <label for="date&time" class="col-form-label ">Date and Time</label>
+                            </div>
+
+                            <input type="date" name="date&time" id="date&time" placeholder="Date"
+                                class="col-md-3 stylingOfButton">
+                            <input type="time" name="date&time" id="date&time" placeholder="Time"
+                                class="col-md-3 offset-md-2 stylingOfButton">
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2">
+                                <button type="submit" class="btn btn-primary">
+                                    Reserve
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -132,11 +221,16 @@
                 </div>
                 <div class="col-12 col-sm-4">
                     <div>
-                        <a href="http://google.com/+" class="btn btn-social-icon btn-google"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a href="http://google.com/+" class="btn btn-social-icon btn-google"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-facebook"><i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i
+                                class="fa fa-youtube fa-lg"></i></a>
                         <a href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
                     </div>
                 </div>
